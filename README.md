@@ -1,2 +1,4 @@
 # Selenium_AS_Becerra
-Ejercicios Selenium Curso 
+Selenium Course
+
+This is my first commit in the course.
