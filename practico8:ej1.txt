@@ -1,6 +1,6 @@
 
 
-Hello, this is a workout on gitHub, for my Selenium Course in Selenium Academy.
+Hello, this is an exercise on gitHub, for my Selenium Course in Selenium Academy.
 
  ASBT
 
