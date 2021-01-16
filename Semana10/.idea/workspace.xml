@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a0aa109-3149-429a-9cd9-3e8134ba7f37" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1n7qUYujKRw2EOeq5P9GVLgECfs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Exercise1.forgotAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ClaseMiercoles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Clase10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Clase10" />
+      <option name="MAIN_CLASS_NAME" value="Clase10.Exercise1" />
+      <option name="METHOD_NAME" value="forgotAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Exercise1.forgotAccountTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a0aa109-3149-429a-9cd9-3e8134ba7f37" name="Default Changelist" comment="" />
+      <created>1610751492790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610751492790</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="530" y="186" key="#Project_Structure" timestamp="1610751574085">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="530" y="186" key="#Project_Structure/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1610751574085" />
+    <state width="1365" height="201" key="GridCell.Tab.0.bottom" timestamp="1610754433127">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1365" height="201" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1610754433127" />
+    <state width="1365" height="201" key="GridCell.Tab.0.center" timestamp="1610754433126">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1365" height="201" key="GridCell.Tab.0.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1610754433126" />
+    <state width="1365" height="201" key="GridCell.Tab.0.left" timestamp="1610754433126">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1365" height="201" key="GridCell.Tab.0.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1610754433126" />
+    <state width="1365" height="201" key="GridCell.Tab.0.right" timestamp="1610754433127">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1365" height="201" key="GridCell.Tab.0.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1610754433127" />
+  </component>
+</project>
