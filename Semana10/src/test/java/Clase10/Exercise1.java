@@ -83,6 +83,7 @@ public class Exercise1 {
 
         //driver.close();
     }
+
     @Test
     public void birthDateTest () throws InterruptedException {
         WebDriver driver = getDriver("https://www.facebook.com");
@@ -103,5 +104,59 @@ public class Exercise1 {
     }
 
     @Test
+    public void comboBoxTest()  throws InterruptedException{
+        WebDriver driver = getDriver("https://www.facebook.com");
+        System.out.println("Title: " + driver.getTitle());
+        driver.findElement(By.linkText("Create New Account")).click();
+        Thread.sleep(3000);
+        WebElement month = driver.findElement(By.name("birthday_month"));
+        Select comboMonth = new Select(month);
+        comboMonth.selectByVisibleText("Jan");
+        comboMonth.selectByVisibleText("Feb");
+        comboMonth.selectByVisibleText("Mar");
+
+        List<WebElement> options = comboMonth.getOptions();
+        Assert.assertNotEquals(0, options.size(), "The list is empty");
+        boolean find = false;
+        for (WebElement opt : options) {
+            System.out.println(opt.getText());
+            if (opt.getText().contentEquals("Jun")){
+                find = true;
+                break;
+            }
+        }
+    }
+    @Test
+    public void fullRegistrationTest() throws InterruptedException {
+        WebDriver driver = getDriver("https://www.facebook.com");
+        System.out.println("Title: " + driver.getTitle());
+        driver.findElement(By.linkText("Create New Account")).click();
+        Thread.sleep(4000);
+        driver.findElement(By.name("firstname")).sendKeys("John");
+        driver.findElement(By.name("lastname")).sendKeys("Smith");
+        driver.findElement(By.name("reg_email__")).sendKeys("55555555");
+        driver.findElement(By.id("password_step_input")).sendKeys("123456789");
+        WebElement month = driver.findElement(By.id("month"));
+        Select comboMonth = new Select(month);
+        comboMonth.selectByVisibleText("Jun");
+        WebElement days = driver.findElement(By.id("day"));
+        Select comboDays = new Select(days);
+        comboDays.selectByValue("26");
+        WebElement year = driver.findElement(By.id("year"));
+        Select comboYear = new Select(year);
+        comboYear.selectByVisibleText("1980");
+        List<WebElement> sexRadioButtons = driver.findElements(By.name("sex"));
+        WebElement maleRadioButton = null;
+        for(WebElement element: sexRadioButtons){
+            System.out.println(element.getAttribute("value"));
+            if(element.getAttribute("value").equals("2")){
+                maleRadioButton = element;
+            }
+        }
+        maleRadioButton.click();
+
+        //driver.close();
+    }
+
 
 }
