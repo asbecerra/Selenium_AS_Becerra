@@ -126,12 +126,41 @@ public class Exercise1 {
             }
         }
     }
+    private void setBirthday(WebDriver driver,  String month, String day, String year){
+        WebElement months = driver.findElement(By.id("month"));
+        Select comboMonth = new Select(months);
+        comboMonth.selectByVisibleText(month);
+
+        WebElement days = driver.findElement(By.id("day"));
+        Select comboDays = new Select(days);
+        comboDays.selectByVisibleText(day);
+
+        WebElement years = driver.findElement(By.id("year"));
+        Select comboYear = new Select(years);
+        comboYear.selectByVisibleText(year);
+    }
+
+    @Test
+
+    public void completeFBKRegistration() throws InterruptedException {
+        WebDriver driver = getDriver("https://www.facebook.com");
+        System.out.println("Title: " + driver.getTitle());
+        driver.findElement(By.linkText("Create New Account")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.name("firstname")).sendKeys("The");
+        driver.findElement(By.name("lastname")).sendKeys("Smith");
+        driver.findElement(By.name("reg_email__")).sendKeys("123456789");
+        driver.findElement(By.id("password_step_input")).sendKeys("123456789");
+        setBirthday(driver,"Jun","22", "1990");
+    }
+
+
     @Test
     public void fullRegistrationTest() throws InterruptedException {
         WebDriver driver = getDriver("https://www.facebook.com");
         System.out.println("Title: " + driver.getTitle());
         driver.findElement(By.linkText("Create New Account")).click();
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         driver.findElement(By.name("firstname")).sendKeys("John");
         driver.findElement(By.name("lastname")).sendKeys("Smith");
         driver.findElement(By.name("reg_email__")).sendKeys("55555555");
