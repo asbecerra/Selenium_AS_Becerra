@@ -1,6 +1,12 @@
 package Week12;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+
+import java.util.List;
 
 public class TestngTest {
 
@@ -8,6 +14,7 @@ public class TestngTest {
     public void beforeSuite(){
         System.out.println("Before Suite");
     }
+
     @BeforeTest
     public void beforeTest(){
         System.out.println("Before Test");
@@ -24,8 +31,12 @@ public class TestngTest {
     }
 
     @Test
-    public void firstTest(){
-        System.out.println("This is a test");
+    @Parameters({"tagName"})
+    public void firstTest(@Optional("local run") String tag){
+        //@Optional value for local execution
+        System.out.println("This is a test " + tag);
+        //WebDriver driver = new ChromeDriver();
+        //List<WebElement> listElements = driver.findElements(By.tagName(tag));
     }
 
     @Test
