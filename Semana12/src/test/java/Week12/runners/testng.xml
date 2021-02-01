@@ -7,6 +7,7 @@
         <classes>
             <class name="Week12.TestngTest"></class>
             <class name="Week12.TestNGSpotify"></class>
+            <class name="Week12.SalesforceTestNG"></class>
         </classes>
     </test>
 </suite>
