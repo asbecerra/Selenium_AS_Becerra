@@ -20,7 +20,7 @@ public class SalesforceTestNG {
         driver = new ChromeDriver();
         driver.get(SALESFORCE_URL);
     }
-    //Exercise7&10
+    //Exercise7 & 10
     @Test (enabled = false)
     public void validateSalesforceLogo (){
         WebElement logo = driver.findElement(By.id("logo"));
@@ -40,14 +40,23 @@ public class SalesforceTestNG {
         WebElement footer = driver.findElement(By.id("footer"));
         Assert.assertTrue(footer.getText().contains("All rights reserved"));
     }
-
-
+    //Exercise15 GIT
+    @Test (priority = 3)
+    public void loginFailureTest (){
+        WebElement logo = driver.findElement(By.id("logo"));
+        Assert.assertEquals(logo.getAttribute("name"),"logo");
+        driver.findElement(By.id("username")).sendKeys("test@test.com");
+        driver.findElement(By.name("pw")).sendKeys("123466");
+        driver.findElement(By.id("Login")).click();
+        WebElement errorMsg = driver.findElement(By.id("error"));
+        System.out.println(errorMsg.getText());
+        String expectedErrorMsg = "Your access to salesforce.com has been disabled by your system administrator. "+
+                "Please contact your Administrator for more information.";
+        Assert.assertEquals(errorMsg.getText(), expectedErrorMsg);
+    }
 
     @AfterMethod
     public void tearDown(){
         driver.close();
     }
-
-
-
 }
