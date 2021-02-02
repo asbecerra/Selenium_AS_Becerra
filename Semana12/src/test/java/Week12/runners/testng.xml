@@ -5,15 +5,16 @@
         <parameter name="username" value="as@as.com"></parameter>
         <parameter name="pasword" value="test"></parameter>
         <groups>
-            <run>
-                <include name="successTests"/>
-                <include name="failTests"/>
-            </run>
+        <run>
+            <include name="successTests"/>
+            <include name="failTests"/>
+        </run>
         </groups>
         <classes>
             <class name="Week12.TestngTest"></class>
             <class name="Week12.TestNGSpotify"></class>
             <class name="Week12.SalesforceTestNG"></class>
+            <class name="Week12.TestGroups"></class>
         </classes>
     </test>
 </suite>

@@ -2,6 +2,7 @@ package Week12;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -33,5 +34,10 @@ public class TestGroups {
     }
     @Test(groups = {"failTests"})
     public void failTest2(){
+    }
+    @AfterTest
+    public void tearDown(){
+        System.out.println("Test run");
+        driver.close();
     }
 }
