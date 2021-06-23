@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Class 12">
+    <test name = "TestNG Exercises Week 12">
+        <parameter name="tagName" value="Executed by testng.xml"></parameter>
+        <parameter name="username" value="as@as.com"></parameter>
+        <parameter name="pasword" value="test"></parameter>
+        <parameter name="specificTag" value="h2"></parameter>
+        <groups>
+        <run>
+            <include name="successTests"/>
+            <include name="failTests"/>
+        </run>
+        </groups>
+        <classes>
+            <class name="Week12.TestngTest"></class>
+            <class name="Week12.TestNGSpotify"></class>
+            <class name="Week12.SalesforceTestNG"></class>
+            <class name="Week12.TestGroups"></class>
+            <class name="Week12.SpotifyTestWithParameters"></class>
+        </classes>
+    </test>
+</suite>
